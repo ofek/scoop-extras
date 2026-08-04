@@ -1,0 +1,23 @@
+{
+    "version": "0.3.0",
+    "description": "Image processing and computer vision library in pure C.",
+    "homepage": "https://flatcv.ad-si.com",
+    "license": "ISC",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ad-si/FlatCV/releases/download/v0.3.0/flatcv_windows_x86_64.exe#/flatcv.exe",
+            "hash": "b3914ee2b7b8eb388462c5e5b5cf5fdb3c0aea3216f1aab2b6952ee7d8dd921e"
+        }
+    },
+    "bin": "flatcv.exe",
+    "checkver": {
+        "github": "https://github.com/ad-si/FlatCV"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ad-si/FlatCV/releases/download/v$version/flatcv_windows_x86_64.exe#/flatcv.exe"
+            }
+        }
+    }
+}
